@@ -1,7 +1,7 @@
 # Go 19×19 — Comparaison d'architectures sous contrainte de 100k paramètres
 
 > Projet académique — Master 2 IASD, Université Paris-Dauphine PSL (2025–2026)
-> Amine ROUIBI · Thomas SINAPI · Mohamed ZOUAD
+> Mohamed ZOUAD · Thomas SINAPI · Amine ROUIBI 
 
 ---
 
