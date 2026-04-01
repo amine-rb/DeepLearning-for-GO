@@ -5,6 +5,7 @@
 
 ---
 
+
 ## Vue d'ensemble
 
 Ce projet compare 14 architectures de réseaux de neurones profonds pour la prédiction de coups et l'évaluation de position dans le jeu de Go 19×19, sous une contrainte stricte de **100 000 paramètres maximum**. Toutes les architectures sont entraînées avec **exactement les mêmes hyperparamètres** — seule l'architecture varie — afin de garantir une comparaison équitable et de n'attribuer les différences de performance qu'aux seuls choix architecturaux.
