@@ -120,8 +120,9 @@ Dix architectures couvrant un large spectre sont évaluées dans un premier temp
 ---
 
 ### Phase 2 — Réentraînement des top 3 (N = 50 000 positions)
-
+<!--
 Les trois meilleures architectures (M3, M4, M9) sont réentraînées avec un volume de données multiplié par 5. Les performances progressent de 2,3 à 4,2 points selon le modèle. Fait notable, M4 dépasse M9 en Phase 2 (35,29 % vs 35,01 %), alors que M9 dominait en Phase 1 : avec plus de données, les blocs résiduels standards comblent l'avantage structurel des convolutions dilatées. Les trois architectures plafonnent néanmoins autour de 35 %.
+-->
 
 | Modèle | Phase 1 | Phase 2 | Gain |
 |--------|---------|---------|------|
@@ -134,7 +135,7 @@ Les trois meilleures architectures (M3, M4, M9) sont réentraînées avec un vol
 ---
 
 ### Phase 3 — Architectures efficientes modernes (N = 50 000 positions)
-
+<!--
 Quatre architectures conçues pour maximiser le rapport performance/paramètre sont évaluées directement avec 50k positions.
 
 **M11 – MBConv + SE** utilise des blocs MBConv (Mobile Inverted Bottleneck Convolution) avec expansion ×4, convolution séparable 3×3, activation Swish et module SE. La technique de stochastic depth régularise le modèle. Inspiré d'EfficientNet. Il atteint 44,39 %.
@@ -144,6 +145,7 @@ Quatre architectures conçues pour maximiser le rapport performance/paramètre s
 **M15 – ConvNeXt-Lite** adapte l'architecture ConvNeXt avec des noyaux dépthwise 7×7, une normalisation LayerNorm, une activation GELU et une expansion MLP ×4. Cette architecture modernise le CNN classique en incorporant les biais inductifs des Transformers dans un cadre entièrement convolutionnel. Il atteint 41,19 % sans avoir convergé.
 
 **M18 – EfficientFormer-Go** est une architecture étagée hybride CNN-Transformer : les premières couches sont convolutionnelles et les dernières appliquent une attention multi-têtes sur des tokens poolés, réduisant le coût quadratique de l'attention. Il atteint le meilleur score global : **44,56 %**.
+-->
 
 | Modèle | Architecture | Attention | Params | Acc. |
 |--------|-------------|-----------|--------|------|
